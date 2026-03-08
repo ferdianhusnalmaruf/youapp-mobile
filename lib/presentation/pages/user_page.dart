@@ -85,6 +85,7 @@ class _UserPageState extends State<UserPage> {
 
                               if (usercontroller.user.value.zodiac != null)
                                 Container(
+                                  margin: const EdgeInsets.only(left: 8),
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(100),
                                     color: colorWhiteOpc06,

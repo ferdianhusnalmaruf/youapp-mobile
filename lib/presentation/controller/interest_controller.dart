@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:youapp/domain/entities/user_response.dart';
 import 'package:youapp/domain/usecases/get_user_profile_usecase.dart';
@@ -52,11 +53,21 @@ class InterestController extends GetxController {
 
       user.value = response.data ?? User();
 
-      Get.snackbar(
-        "Success",
-        "Interests updated",
-        snackPosition: SnackPosition.BOTTOM,
-      );
+      if (response.data != null) {
+        Get.snackbar(
+          "Success",
+          "Interests updated",
+          snackPosition: SnackPosition.BOTTOM,
+          backgroundColor: Colors.green,
+        );
+      } else {
+        Get.snackbar(
+          "Error",
+          "Failed to update interests",
+          snackPosition: SnackPosition.BOTTOM,
+          backgroundColor: Colors.red,
+        );
+      }
     } finally {
       loading.value = false;
     }
