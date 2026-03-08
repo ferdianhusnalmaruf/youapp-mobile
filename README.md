@@ -12,11 +12,13 @@ Aplikasi Flutter untuk kebutuhan autentikasi dan pengelolaan profil pengguna (Ab
 
 ## Screenshot
 
-![Login Page](assets/screnshoot/ss1_login_page.jpeg)
-![Register Page](assets/screnshoot/ss2_register_page.jpeg)
-![User Page](assets/screnshoot/ss3_user_page.jpeg)
-![User About Page](assets/screnshoot/ss4_user_about_page.jpeg)
-![User Interests Page](assets/screnshoot/ss5_user_interests_page.jpeg)
+<p align="center">
+	<img src="assets/screnshoot/ss1_login_page.jpeg" alt="Login Page" width="180" />
+	<img src="assets/screnshoot/ss2_register_page.jpeg" alt="Register Page" width="180" />
+	<img src="assets/screnshoot/ss3_user_page.jpeg" alt="User Page" width="180" />
+	<img src="assets/screnshoot/ss4_user_about_page.jpeg" alt="User About Page" width="180" />
+	<img src="assets/screnshoot/ss5_user_interests_page.jpeg" alt="User Interests Page" width="180" />
+</p>
 
 ## Tech Stack
 
