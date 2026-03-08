@@ -13,11 +13,11 @@ Aplikasi Flutter untuk kebutuhan autentikasi dan pengelolaan profil pengguna (Ab
 ## Screenshot
 
 <p align="center">
-	<img src="assets/screnshoot/ss1_login_page.jpeg" alt="Login Page" width="180" />
-	<img src="assets/screnshoot/ss2_register_page.jpeg" alt="Register Page" width="180" />
+	<img src="assets/screnshoot/ss1_login_page.jpeg" alt="Login Page" width="80" />
+	<img src="assets/screnshoot/ss2_register_page.jpeg" alt="Register Page" width="80" />
 	<img src="assets/screnshoot/ss3_user_page.jpeg" alt="User Page" width="180" />
-	<img src="assets/screnshoot/ss4_user_about_page.jpeg" alt="User About Page" width="180" />
-	<img src="assets/screnshoot/ss5_user_interests_page.jpeg" alt="User Interests Page" width="180" />
+	<img src="assets/screnshoot/ss4_user_about_page.jpeg" alt="User About Page" width="80" />
+	<img src="assets/screnshoot/ss5_user_interests_page.jpeg" alt="User Interests Page" width="80" />
 </p>
 
 ## Tech Stack
@@ -78,7 +78,6 @@ Endpoint utama:
 
 - `/api/login`
 - `/api/register`
-- `/api/createProfile`
 - `/api/getProfile`
 - `/api/updateProfile`
 
@@ -109,6 +108,7 @@ Struktur test yang tersedia:
 - Unit test:
   - `test/data/repositories/auth_repository_impl_test.dart`
   - `test/domain/repositories/user_repository_test.dart`
+- Widget test:
   - `test/presentation/pages/login_page_test.dart`
 - Integration test:
   - `integration_test/auth_profile_flow_test.dart`
