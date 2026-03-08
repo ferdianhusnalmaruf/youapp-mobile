@@ -14,6 +14,17 @@ class UserResponse implements BaseEntity<User> {
   final User? data;
 
   UserResponse({this.statusCode, this.message, this.error, this.data});
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is UserResponse &&
+        other.statusCode == statusCode &&
+        other.message == message &&
+        other.error == error &&
+        other.data == data;
+  }
 }
 
 class User {
@@ -65,5 +76,22 @@ class User {
     }
 
     return age;
+  }
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is User &&
+        other.username == username &&
+        other.email == email &&
+        other.name == name &&
+        other.birthday == birthday &&
+        other.horoscope == horoscope &&
+        other.zodiac == zodiac &&
+        other.gender == gender &&
+        other.height == height &&
+        other.weight == weight &&
+        other.interests == interests;
   }
 }

@@ -10,4 +10,16 @@ class AuthResponse extends BaseEntity {
     super.error,
     super.data,
   });
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is AuthResponse &&
+        other.token == token &&
+        other.statusCode == statusCode &&
+        other.message == message &&
+        other.error == error &&
+        other.data == data;
+  }
 }
